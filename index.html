@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aidie Aizeck ak Aslan | Portfolio & Resume</title>
+    <meta name="description" content="Resume and portfolio of Aidie Aizeck ak Aslan - Full-Stack Developer Intern & IT Student specialized in Web & Mobile Development.">
+    <meta name="keywords" content="Aidie Aizeck, Resume, Portfolio, IT Student, UTHM, Full-Stack Developer, Flutter, CodeIgniter, PostgreSQL">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Feather / Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Ambient Glows -->
+    <div class="glow-bg glow-bg-1"></div>
+    <div class="glow-bg glow-bg-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">
+                <span class="brand-text">AIDIE<span class="brand-accent">.</span>AIZECK</span>
+                <span class="status-badge" title="Ready to Work / Available for Hiring">
+                    <span class="status-dot"></span> Ready to Work
+                </span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <button class="btn btn-outline" id="printBtn" onclick="window.print()">
+                    <i data-lucide="printer"></i>
+                    <span>Print / PDF</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle mobile menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#certifications" class="mobile-link">Certifications</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero / Header Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-text-content">
+                    <div class="badge-pill">
+                        <i data-lucide="briefcase"></i> Ready to Work • IT Graduate
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Aidie Aizeck</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Full-Stack Developer & IT Specialist</h2>
+                    <p class="hero-bio">
+                        Passionate Information Technology graduate with hands-on experience in full-stack web development, 
+                        mobile applications, and database engineering. Ready to contribute high-impact solutions using 
+                        <strong>CodeIgniter</strong>, <strong>Flutter</strong>, and <strong>PostgreSQL</strong>.
+                    </p>
+
+                    <div class="hero-contact-list">
+                        <div class="contact-chip" onclick="copyToClipboard('aizeck2203@gmail.com', 'Email copied!')" title="Click to copy email">
+                            <i data-lucide="mail"></i>
+                            <span>aizeck2203@gmail.com</span>
+                            <i data-lucide="copy" class="chip-copy-icon"></i>
+                        </div>
+                        <div class="contact-chip" onclick="copyToClipboard('013-4047969', 'Phone copied!')" title="Click to copy phone">
+                            <i data-lucide="phone"></i>
+                            <span>013-404 7969</span>
+                            <i data-lucide="copy" class="chip-copy-icon"></i>
+                        </div>
+                        <div class="contact-chip">
+                            <i data-lucide="map-pin"></i>
+                            <span>Tanjung Malim, Perak</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta-group">
+                        <a href="https://github.com/AIZECK03" target="_blank" rel="noopener" class="btn btn-primary">
+                            <i data-lucide="github"></i>
+                            <span>GitHub Profile</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aidieaizeck" target="_blank" rel="noopener" class="btn btn-secondary">
+                            <i data-lucide="linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">
+                            <i data-lucide="send"></i>
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="image-card-container">
+                        <div class="avatar-ring"></div>
+                        <img src="profile.png" alt="Aidie Aizeck ak Aslan" class="profile-avatar">
+                        <div class="experience-floating-badge">
+                            <i data-lucide="code-2"></i>
+                            <div>
+                                <span class="floating-title">Full-Stack Developer</span>
+                                <span class="floating-sub">Pusat ICT, UPSI</span>
+                            </div>
+                        </div>
+                        <div class="cgpa-floating-badge">
+                            <span class="cgpa-val">3.27</span>
+                            <span class="cgpa-label">CGPA (Honours)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Bar -->
+        <section class="highlights-section">
+            <div class="container highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i data-lucide="award"></i></div>
+                    <div class="highlight-data">
+                        <span class="highlight-value">3.27</span>
+                        <span class="highlight-label">CGPA (Honours)</span>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i data-lucide="briefcase"></i></div>
+                    <div class="highlight-data">
+                        <span class="highlight-value">Full-Stack</span>
+                        <span class="highlight-label">Web & Mobile Developer</span>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i data-lucide="code"></i></div>
+                    <div class="highlight-data">
+                        <span class="highlight-value">15+</span>
+                        <span class="highlight-label">Tech & Tools Mastered</span>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i data-lucide="trophy"></i></div>
+                    <div class="highlight-data">
+                        <span class="highlight-value">Top Coders</span>
+                        <span class="highlight-label">National Challenge 2025</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Professional Summary -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Overview</span>
+                    <h2 class="section-title">Professional Summary</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-card glass-panel">
+                    <p class="summary-paragraph">
+                        Information Technology graduate from <strong>Universiti Tun Hussein Onn Malaysia (UTHM)</strong> with a strong passion for technology, software engineering, and digital innovation. Currently <strong>ready to work</strong> and actively seeking full-time developer roles to deploy robust web and mobile systems.
+                    </p>
+                    <p class="summary-paragraph">
+                        Skilled in programming, database management, and full-stack web development with hands-on experience gained through academic projects, professional internship at UPSI ICT Centre, and national coding competitions. Leadership roles in student organizations have cultivated strong teamwork, active communication, and structured problem-solving capabilities.
+                    </p>
+                    <p class="summary-paragraph">
+                        A fast learner who adapts quickly to new technical stacks and frameworks, dedicated to delivering meaningful IT solutions and staying at the forefront of emerging technologies.
+                    </p>
+
+                    <div class="summary-tags">
+                        <span class="tag"><i data-lucide="check-circle-2"></i> Ready for Employment</span>
+                        <span class="tag"><i data-lucide="check-circle-2"></i> Web & Mobile Development</span>
+                        <span class="tag"><i data-lucide="check-circle-2"></i> Database Architecture</span>
+                        <span class="tag"><i data-lucide="check-circle-2"></i> Leadership & Team Coordination</span>
+                        <span class="tag"><i data-lucide="check-circle-2"></i> Fast Learner & Adaptable</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Projects Section -->
+        <section class="section bg-alt" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Career Track</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Internship 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i data-lucide="laptop"></i></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="item-header">
+                                <div>
+                                    <h3 class="role-title">Full-Stack Developer Intern</h3>
+                                    <h4 class="company-name">Pusat ICT, Universiti Pendidikan Sultan Idris (UPSI)</h4>
+                                </div>
+                                <span class="date-badge"><i data-lucide="calendar"></i> Feb 2026 – Aug 2026</span>
+                            </div>
+                            <p class="item-desc">
+                                Digitalized manual management processes by developing <strong>Sistem Pengurusan Yuran Pusat ICT</strong>, an integrated web and cross-platform mobile app solution.
+                            </p>
+                            <ul class="item-bullets">
+                                <li>Built full-featured web application interfaces using <strong>CodeIgniter 3/4</strong> and cross-platform mobile interfaces using <strong>Flutter</strong>, backed by <strong>PostgreSQL</strong>.</li>
+                                <li>Designed and implemented core functional modules: member data management, fee tracking, automated payment processing, and administrative analytics reporting.</li>
+                                <li>Collaborated closely with the ICT Centre software development team, conducting regular technical demos and progress updates to ensure alignment with organizational goals.</li>
+                            </ul>
+                            <div class="tech-pills">
+                                <span>CodeIgniter 3/4</span>
+                                <span>Flutter</span>
+                                <span>PostgreSQL</span>
+                                <span>PHP</span>
+                                <span>Dart</span>
+                                <span>Web & Mobile</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i data-lucide="truck"></i></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="item-header">
+                                <div>
+                                    <h3 class="role-title">Vehicle Logistics Driver</h3>
+                                    <h4 class="company-name">Laguna Maju Resources <span class="sub-text">(Subcontractor of Pos Logistics Proton Holdings)</span></h4>
+                                </div>
+                                <span class="date-badge"><i data-lucide="calendar"></i> Jun – Aug 2023 | Aug – Sep 2025</span>
+                            </div>
+                            <ul class="item-bullets">
+                                <li>Transported manufactured Proton vehicles efficiently from storage yards to loading bays while maintaining strict schedules.</li>
+                                <li>Communicated effectively with supervisors, loaders, and dispatch coordinators to manage vehicle sequencing smoothly.</li>
+                                <li>Demonstrated high adaptability and teamwork in high-volume, fast-paced operational environments.</li>
+                                <li>Initiated onboard training for new logistics staff on safety compliance, vehicle flow procedures, and operational checklists.</li>
+                            </ul>
+                            <div class="tech-pills">
+                                <span>Logistics Operations</span>
+                                <span>Team Leadership</span>
+                                <span>Safety Management</span>
+                                <span>Process Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Leadership 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i data-lucide="users"></i></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="item-header">
+                                <div>
+                                    <h3 class="role-title">Class Leader – Appreciating Ethics & Civilization</h3>
+                                    <h4 class="company-name">Universiti Tun Hussein Onn Malaysia (UTHM)</h4>
+                                </div>
+                                <span class="date-badge"><i data-lucide="calendar"></i> Oct 2023 – Feb 2024</span>
+                            </div>
+                            <ul class="item-bullets">
+                                <li>Served as student representative for the entire class cohort, directing group activities, academic discussions, and presentations.</li>
+                                <li>Monitored attendance, assignment timelines, and task allocation to ensure 100% submission rates.</li>
+                                <li>Acted as liaison between faculty lecturers and students, streamlining academic communications.</li>
+                            </ul>
+                            <div class="tech-pills">
+                                <span>Leadership</span>
+                                <span>Time Management</span>
+                                <span>Public Speaking</span>
+                                <span>Event Coordination</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Featured Work</span>
+                    <h2 class="section-title">Projects & Systems</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-badge">Final Year Project</div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">DiGi Planner Staff Management System</h3>
+                                <span class="project-year"><i data-lucide="calendar"></i> 2025 – 2026</span>
+                            </div>
+                            <p class="project-description">
+                                A web-based Staff Management System created for DiGi Planners to simplify staff registration, automated attendance tracking, leave applications, and role-based permissions.
+                            </p>
+                            <div class="project-features">
+                                <h4><i data-lucide="sparkles"></i> Key Highlights:</h4>
+                                <ul>
+                                    <li>Structured system architecture ensuring high reliability and data integrity.</li>
+                                    <li>Automated role management for staff members and administrative officers.</li>
+                                    <li>Rigorously tested and validated for accurate record keeping and smooth user experience.</li>
+                                </ul>
+                            </div>
+                            <div class="tech-pills">
+                                <span>Web App</span>
+                                <span>Database Design</span>
+                                <span>User Roles</span>
+                                <span>Attendance Tracking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-badge accent">Internship Project</div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Sistem Pengurusan Yuran Pusat ICT</h3>
+                                <span class="project-year"><i data-lucide="calendar"></i> 2026</span>
+                            </div>
+                            <p class="project-description">
+                                An integrated web and mobile platform for UPSI ICT Centre to digitize manual fee collections, member subscriptions, and financial audit reporting.
+                            </p>
+                            <div class="project-features">
+                                <h4><i data-lucide="sparkles"></i> Key Highlights:</h4>
+                                <ul>
+                                    <li>Cross-platform mobile UI built with Flutter for seamless on-the-go member fee status verification.</li>
+                                    <li>Robust backend powered by CodeIgniter & PostgreSQL handling transactions and automated receipts.</li>
+                                    <li>Interactive analytics dashboard for administrators to generate financial summaries.</li>
+                                </ul>
+                            </div>
+                            <div class="tech-pills">
+                                <span>CodeIgniter</span>
+                                <span>Flutter</span>
+                                <span>PostgreSQL</span>
+                                <span>Fee Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section bg-alt" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Academic Background</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="education-card glass-panel">
+                    <div class="edu-icon"><i data-lucide="book-open"></i></div>
+                    <div class="edu-main">
+                        <div class="edu-header">
+                            <div>
+                                <h3 class="edu-degree">Bachelor of Information Technology with Honours</h3>
+                                <h4 class="edu-institution">Universiti Tun Hussein Onn Malaysia (UTHM), Batu Pahat, Johor</h4>
+                            </div>
+                            <span class="date-badge"><i data-lucide="calendar"></i> 2023 – 2026</span>
+                        </div>
+
+                        <div class="edu-details-grid">
+                            <div class="edu-metric">
+                                <span class="metric-label">CGPA Score</span>
+                                <span class="metric-val">3.27 / 4.00</span>
+                            </div>
+                            <div class="edu-metric">
+                                <span class="metric-label">Degree Focus</span>
+                                <span class="metric-val">Information Technology</span>
+                            </div>
+                            <div class="edu-metric">
+                                <span class="metric-label">Final Year Project</span>
+                                <span class="metric-val">DiGi Planner Staff Management System</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Technical Competencies</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">All Skills</button>
+                    <button class="filter-btn" data-filter="tech">Technical & Frameworks</button>
+                    <button class="filter-btn" data-filter="tools">Tools & Software</button>
+                    <button class="filter-btn" data-filter="soft">Soft Skills</button>
+                    <button class="filter-btn" data-filter="languages">Languages</button>
+                </div>
+
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- Tech & Languages -->
+                    <div class="skill-card" data-category="tech">
+                        <div class="skill-icon"><i data-lucide="code"></i></div>
+                        <div class="skill-info">
+                            <h4>HTML5 & CSS3</h4>
+                            <span class="skill-type">Web Frontend</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="tech">
+                        <div class="skill-icon"><i data-lucide="file-code-2"></i></div>
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                            <span class="skill-type">Programming Language</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="tech">
+                        <div class="skill-icon"><i data-lucide="terminal"></i></div>
+                        <div class="skill-info">
+                            <h4>PHP & CodeIgniter 3/4</h4>
+                            <span class="skill-type">Backend Development</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="tech">
+                        <div class="skill-icon"><i data-lucide="smartphone"></i></div>
+                        <div class="skill-info">
+                            <h4>Flutter & Dart</h4>
+                            <span class="skill-type">Cross-Platform Mobile</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="tech">
+                        <div class="skill-icon"><i data-lucide="database"></i></div>
+                        <div class="skill-info">
+                            <h4>PostgreSQL & MySQL</h4>
+                            <span class="skill-type">Database Management</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="tech">
+                        <div class="skill-icon"><i data-lucide="cpu"></i></div>
+                        <div class="skill-info">
+                            <h4>Python & C++</h4>
+                            <span class="skill-type">Programming</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="tech">
+                        <div class="skill-icon"><i data-lucide="layout"></i></div>
+                        <div class="skill-info">
+                            <h4>Bootstrap & Responsive Design</h4>
+                            <span class="skill-type">UI Framework</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Software -->
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-icon"><i data-lucide="bar-chart-3"></i></div>
+                        <div class="skill-info">
+                            <h4>Power BI</h4>
+                            <span class="skill-type">Data Analytics</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-icon"><i data-lucide="binary"></i></div>
+                        <div class="skill-info">
+                            <h4>SAS Viya</h4>
+                            <span class="skill-type">Machine Learning & Analytics</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-icon"><i data-lucide="network"></i></div>
+                        <div class="skill-info">
+                            <h4>Cisco Packet Tracer</h4>
+                            <span class="skill-type">Networking</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-icon"><i data-lucide="box"></i></div>
+                        <div class="skill-info">
+                            <h4>VMWare & Oracle VirtualBox</h4>
+                            <span class="skill-type">Virtualization</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-icon"><i data-lucide="smartphone"></i></div>
+                        <div class="skill-info">
+                            <h4>Android Studio</h4>
+                            <span class="skill-type">Mobile Development IDE</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-icon"><i data-lucide="sheet"></i></div>
+                        <div class="skill-info">
+                            <h4>Microsoft Excel</h4>
+                            <span class="skill-type">Data Analysis</span>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-card" data-category="soft">
+                        <div class="skill-icon"><i data-lucide="users"></i></div>
+                        <div class="skill-info">
+                            <h4>Teamwork & Leadership</h4>
+                            <span class="skill-type">Interpersonal</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="soft">
+                        <div class="skill-icon"><i data-lucide="clock"></i></div>
+                        <div class="skill-info">
+                            <h4>Time Management</h4>
+                            <span class="skill-type">Organization</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="soft">
+                        <div class="skill-icon"><i data-lucide="lightbulb"></i></div>
+                        <div class="skill-info">
+                            <h4>Problem Solving & Fast Learner</h4>
+                            <span class="skill-type">Cognitive</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="soft">
+                        <div class="skill-icon"><i data-lucide="message-square"></i></div>
+                        <div class="skill-info">
+                            <h4>Communication & Honesty</h4>
+                            <span class="skill-type">Professional Ethics</span>
+                        </div>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon"><i data-lucide="languages"></i></div>
+                        <div class="skill-info">
+                            <h4>Bahasa Melayu</h4>
+                            <span class="skill-type">Native Proficiency</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon"><i data-lucide="globe-2"></i></div>
+                        <div class="skill-info">
+                            <h4>English</h4>
+                            <span class="skill-type">Fluent Proficiency</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements -->
+        <section class="section bg-alt" id="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Recognitions</span>
+                    <h2 class="section-title">Certifications & Achievements</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="cert-grid">
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon gold"><i data-lucide="trophy"></i></div>
+                        <div class="cert-content">
+                            <h3>Top Coders Malaysia 2025</h3>
+                            <p class="cert-issuer">National Level Coding Challenge</p>
+                            <span class="cert-status">National Participant</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon blue"><i data-lucide="shield-check"></i></div>
+                        <div class="cert-content">
+                            <h3>CCNA: Introduction to Networks</h3>
+                            <p class="cert-issuer">CISCO Networking Academy</p>
+                            <span class="cert-status">Certified</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon green"><i data-lucide="award"></i></div>
+                        <div class="cert-content">
+                            <h3>PowerBI for Beginners</h3>
+                            <p class="cert-issuer">Microsoft</p>
+                            <span class="cert-status">Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon purple"><i data-lucide="brain"></i></div>
+                        <div class="cert-content">
+                            <h3>Machine Learning using SAS Viya</h3>
+                            <p class="cert-issuer">SAS Academic Programs</p>
+                            <span class="cert-status">Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon cyan"><i data-lucide="book-open-check"></i></div>
+                        <div class="cert-content">
+                            <h3>AWANTEC NTW PERCIPIO Program</h3>
+                            <p class="cert-issuer">Awantec Professional Development</p>
+                            <span class="cert-status">Participant</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon orange"><i data-lucide="sparkles"></i></div>
+                        <div class="cert-content">
+                            <h3>SULAM AI & Machine Learning</h3>
+                            <p class="cert-issuer">UTHM Community Initiative</p>
+                            <span class="cert-status">Program Facilitator</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- References Section -->
+        <section class="section" id="references">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Endorsement</span>
+                    <h2 class="section-title">References</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="reference-grid">
+                    <!-- Reference 1: Internship SV -->
+                    <div class="reference-card glass-panel text-center">
+                        <span class="ref-badge">Internship Supervisor</span>
+                        <div class="ref-avatar">
+                            <i data-lucide="user-check"></i>
+                        </div>
+                        <h3 class="ref-name">Ts. Abdul Mueiz bin Rosli</h3>
+                        <p class="ref-role">Pegawai Teknologi Maklumat F10</p>
+                        <p class="ref-institution">Pusat Teknologi Maklumat & Komunikasi (UPSI)</p>
+
+                        <div class="ref-expertise-tags">
+                            <span class="ref-tag">Mobile App / Web / API</span>
+                            <span class="ref-tag">System Innovation</span>
+                            <span class="ref-tag">ICT Project Management</span>
+                            <span class="ref-tag">Pengurusan Kad Pintar</span>
+                        </div>
+
+                        <div class="ref-contact-buttons">
+                            <a href="mailto:mueiz@ict.upsi.edu.my" class="btn btn-sm btn-outline">
+                                <i data-lucide="mail"></i> Email
+                            </a>
+                            <a href="tel:054507080" class="btn btn-sm btn-outline">
+                                <i data-lucide="phone"></i> 05-450 7080
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Reference 2: Team Member / Colleague -->
+                    <div class="reference-card glass-panel text-center">
+                        <span class="ref-badge purple">Internship Colleague & Mentor</span>
+                        <div class="ref-avatar">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <h3 class="ref-name">Puan Suhaila binti Abusairi</h3>
+                        <p class="ref-role">Pegawai Teknologi Maklumat F9</p>
+                        <p class="ref-institution">Pusat Teknologi Maklumat & Komunikasi (UPSI)</p>
+
+                        <div class="ref-expertise-tags">
+                            <span class="ref-tag">Web / API / Mobile App</span>
+                            <span class="ref-tag">CodeIgniter</span>
+                            <span class="ref-tag">Vue.js</span>
+                            <span class="ref-tag">LMS System</span>
+                        </div>
+
+                        <div class="ref-contact-buttons">
+                            <a href="mailto:suhaila@ict.upsi.edu.my" class="btn btn-sm btn-outline">
+                                <i data-lucide="mail"></i> Email
+                            </a>
+                            <a href="tel:054507266" class="btn btn-sm btn-outline">
+                                <i data-lucide="phone"></i> 05-450 7266
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Reference 3: FYP Supervisor -->
+                    <div class="reference-card glass-panel text-center">
+                        <span class="ref-badge green">FYP Supervisor</span>
+                        <div class="ref-avatar">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <h3 class="ref-name">Prof Madya Dr. Yana Mazwin</h3>
+                        <p class="ref-role">Final Year Project Supervisor</p>
+                        <p class="ref-institution">Universiti Tun Hussein Onn Malaysia (UTHM)</p>
+
+                        <div class="ref-expertise-tags">
+                            <span class="ref-tag">Academic Supervision</span>
+                            <span class="ref-tag">Staff Management System</span>
+                            <span class="ref-tag">Information Technology</span>
+                        </div>
+
+                        <div class="ref-contact-buttons">
+                            <a href="mailto:yana@uthm.edu.my" class="btn btn-sm btn-outline">
+                                <i data-lucide="mail"></i> Email
+                            </a>
+                            <a href="tel:074533722" class="btn btn-sm btn-outline">
+                                <i data-lucide="phone"></i> 07-4533722
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Footer Section -->
+        <section class="section bg-alt" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Connect</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Looking for a dedicated Full-Stack Developer to join your engineering team? Feel free to reach out!</p>
+                    <div class="title-underline center"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-card glass-panel">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to send a direct message or connect via GitHub and LinkedIn.</p>
+
+                        <div class="info-list">
+                            <div class="info-item" onclick="copyToClipboard('aizeck2203@gmail.com', 'Email copied to clipboard!')">
+                                <div class="info-icon"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <span class="info-label">Email Address</span>
+                                    <span class="info-val">aizeck2203@gmail.com</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item" onclick="copyToClipboard('013-4047969', 'Phone copied to clipboard!')">
+                                <div class="info-icon"><i data-lucide="phone"></i></div>
+                                <div>
+                                    <span class="info-label">Phone Contact</span>
+                                    <span class="info-val">013-404 7969</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <span class="info-label">Location</span>
+                                    <span class="info-val">Tanjung Malim, Perak, Malaysia</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/AIZECK03" target="_blank" rel="noopener" class="social-btn" title="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/aidieaizeck" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form glass-panel" id="contactForm">
+                        <h3>Send a Quick Message</h3>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" required placeholder="Hi Aidie, we would like to invite you for an interview regarding our Full-Stack Developer position..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i data-lucide="send"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; <span id="year"></span> Aidie Aizeck ak Aslan. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#hero">Back to top <i data-lucide="arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i data-lucide="check-circle-2" class="toast-icon"></i>
+        <span class="toast-message" id="toastMessage">Copied!</span>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
